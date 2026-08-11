@@ -1,7 +1,7 @@
 /* =========================================================
 DUTY ANGGOTA
-FPB OT SYSTEM
-CORPORATE FORM INTERFACE
+FPB - LAPORAN ANGGARAN KERJA LEBIH MASA
+CORPORATE COMPACT INTERFACE
 DESKTOP + MOBILE
 ========================================================= */
 
@@ -21,9 +21,10 @@ scroll-behavior: smooth;
 
 body {
 background: #f8f9fa;
-color: #333;
 
 ```
+color: #333;
+
 font-family:
     "Segoe UI",
     Tahoma,
@@ -31,7 +32,7 @@ font-family:
     Verdana,
     sans-serif;
 
-font-size: 14px;
+font-size: 13px;
 
 min-height: 100vh;
 ```
@@ -45,7 +46,7 @@ font-family: inherit;
 }
 
 /* =========================================================
-02. APP LAYOUT
+02. APP
 ========================================================= */
 
 .app-layout {
@@ -64,7 +65,7 @@ left: 0;
 top: 0;
 bottom: 0;
 
-width: 270px;
+width: 250px;
 
 background: #343a40;
 
@@ -83,27 +84,28 @@ SIDEBAR BRAND
 ========================================================= */
 
 .sidebar-brand {
-min-height: 82px;
+height: 72px;
 
 ```
-padding: 18px 18px;
+padding: 14px 16px;
 
 display: flex;
 align-items: center;
 
-gap: 12px;
+gap: 10px;
 
-border-bottom: 1px solid rgba(255,255,255,.08);
+border-bottom:
+    1px solid rgba(255,255,255,.08);
 ```
 
 }
 
 .brand-logo {
-width: 42px;
-height: 42px;
+width: 38px;
+height: 38px;
 
 ```
-flex: 0 0 42px;
+flex: 0 0 38px;
 
 display: flex;
 align-items: center;
@@ -113,9 +115,9 @@ background: #ed7d22;
 
 color: #fff;
 
-border-radius: 6px;
+border-radius: 5px;
 
-font-size: 14px;
+font-size: 12px;
 font-weight: 700;
 ```
 
@@ -128,7 +130,7 @@ min-width: 0;
 display: flex;
 flex-direction: column;
 
-gap: 3px;
+gap: 2px;
 ```
 
 }
@@ -137,18 +139,17 @@ gap: 3px;
 color: #fff;
 
 ```
-font-size: 13px;
+font-size: 12px;
 font-weight: 700;
 ```
 
 }
 
 .brand-text span {
-color: #c9c9c9;
+color: #bdbdbd;
 
 ```
 font-size: 9px;
-line-height: 1.3;
 ```
 
 }
@@ -163,37 +164,40 @@ flex: 1;
 ```
 overflow-y: auto;
 
-padding: 14px 10px;
+padding: 12px 9px;
 ```
 
 }
 
 .menu-title {
-padding: 12px 12px 6px;
+padding: 10px 11px 5px;
 
 ```
 color: #999;
 
-font-size: 9px;
+font-size: 8px;
+
 font-weight: 700;
 
 letter-spacing: .5px;
+
+text-transform: uppercase;
 ```
 
 }
 
 .menu-item {
-min-height: 42px;
+min-height: 39px;
 
 ```
-padding: 0 12px;
+padding: 0 11px;
 
-margin-bottom: 3px;
+margin-bottom: 2px;
 
 display: flex;
 align-items: center;
 
-gap: 10px;
+gap: 9px;
 
 color: #d8d8d8;
 
@@ -201,7 +205,7 @@ text-decoration: none;
 
 border-radius: 5px;
 
-font-size: 13px;
+font-size: 12px;
 
 transition:
     background .15s,
@@ -229,20 +233,16 @@ color: #fff;
 }
 
 .menu-icon {
-width: 22px;
+width: 20px;
 
 ```
+flex: 0 0 20px;
+
 text-align: center;
 
-font-size: 16px;
-
-flex-shrink: 0;
+font-size: 14px;
 ```
 
-}
-
-.logout-item {
-margin-top: 5px;
 }
 
 /* =========================================================
@@ -250,39 +250,40 @@ SIDEBAR USER
 ========================================================= */
 
 .sidebar-user {
-min-height: 70px;
+min-height: 62px;
 
 ```
-padding: 12px 15px;
+padding: 10px 13px;
 
-border-top: 1px solid rgba(255,255,255,.08);
+border-top:
+    1px solid rgba(255,255,255,.08);
 
 display: flex;
 align-items: center;
 
-gap: 10px;
+gap: 9px;
 ```
 
 }
 
 .user-avatar {
-width: 34px;
-height: 34px;
+width: 32px;
+height: 32px;
 
 ```
-flex: 0 0 34px;
+flex: 0 0 32px;
 
 border-radius: 50%;
 
 background: #ed7d22;
 
-color: #fff;
-
 display: flex;
 align-items: center;
 justify-content: center;
 
-font-size: 11px;
+color: #fff;
+
+font-size: 10px;
 font-weight: 700;
 ```
 
@@ -304,10 +305,12 @@ gap: 2px;
 color: #fff;
 
 ```
-font-size: 12px;
+font-size: 11px;
 
 white-space: nowrap;
+
 overflow: hidden;
+
 text-overflow: ellipsis;
 ```
 
@@ -317,7 +320,7 @@ text-overflow: ellipsis;
 color: #aaa;
 
 ```
-font-size: 10px;
+font-size: 9px;
 ```
 
 }
@@ -327,7 +330,7 @@ font-size: 10px;
 ========================================================= */
 
 .main-content {
-margin-left: 270px;
+margin-left: 250px;
 
 ```
 min-height: 100vh;
@@ -342,49 +345,57 @@ min-width: 0;
 ========================================================= */
 
 .topbar {
-min-height: 82px;
+min-height: 72px;
 
 ```
-padding: 16px 28px;
+padding: 13px 24px;
 
 background: #fff;
 
-border-bottom: 1px solid #e5e5e5;
+border-bottom:
+    1px solid #e3e3e3;
 
 display: flex;
+
 align-items: center;
+
 justify-content: space-between;
 
-gap: 20px;
+gap: 15px;
 ```
 
 }
 
-.topbar-left {
+/*
+Topbar normal.
+TIDAK fixed.
+Jadi apabila scroll, topbar ikut scroll.
+*/
+
+.page-heading {
 min-width: 0;
 }
 
 .page-heading h1 {
-margin: 0;
-
-```
 color: #1a1a1a;
 
-font-size: 22px;
-font-weight: 700;
+```
+font-size: 19px;
 
 line-height: 1.2;
+
+font-weight: 700;
 ```
 
 }
 
 .page-heading p {
-margin-top: 4px;
+margin-top: 3px;
 
 ```
 color: #777;
 
-font-size: 12px;
+font-size: 10px;
 ```
 
 }
@@ -399,17 +410,18 @@ TOPBAR USER
 
 .topbar-user {
 display: flex;
-align-items: center;
 
 ```
-gap: 9px;
+align-items: center;
+
+gap: 8px;
 ```
 
 }
 
 .topbar-avatar {
-width: 34px;
-height: 34px;
+width: 32px;
+height: 32px;
 
 ```
 border-radius: 50%;
@@ -419,10 +431,13 @@ background: #343a40;
 color: #fff;
 
 display: flex;
+
 align-items: center;
+
 justify-content: center;
 
-font-size: 10px;
+font-size: 9px;
+
 font-weight: 700;
 ```
 
@@ -434,7 +449,7 @@ display: block;
 ```
 color: #333;
 
-font-size: 12px;
+font-size: 11px;
 ```
 
 }
@@ -447,7 +462,7 @@ margin-top: 2px;
 
 color: #888;
 
-font-size: 10px;
+font-size: 9px;
 ```
 
 }
@@ -460,66 +475,126 @@ font-size: 10px;
 width: 100%;
 
 ```
-max-width: 1250px;
+max-width: 1180px;
 
 margin: 0 auto;
 
-padding: 24px 28px 40px;
+padding: 16px 22px 35px;
 ```
 
 }
 
 /* =========================================================
-07. FORM CARD
+07. HERO COMPACT
+========================================================= */
+
+.hero,
+.page-hero {
+width: 100%;
+
+```
+min-height: 0;
+
+height: auto;
+
+margin-bottom: 12px;
+
+padding: 13px 16px;
+
+background: #fff;
+
+border:
+    1px solid #dedede;
+
+border-radius: 7px;
+
+box-shadow: none;
+```
+
+}
+
+.hero h1,
+.page-hero h1 {
+color: #222;
+
+```
+font-size: 17px;
+
+line-height: 1.2;
+```
+
+}
+
+.hero p,
+.page-hero p {
+margin-top: 3px;
+
+```
+color: #777;
+
+font-size: 10px;
+
+line-height: 1.3;
+```
+
+}
+
+/* =========================================================
+08. FORM CARD
 ========================================================= */
 
 .form-card {
 background: #fff;
 
 ```
-border: 1px solid #e0e0e0;
+border:
+    1px solid #dedede;
 
-border-radius: 8px;
+border-radius: 7px;
 
-padding: 22px;
+padding: 17px;
 
-margin-bottom: 18px;
+margin-bottom: 12px;
 
 box-shadow:
-    0 4px 12px rgba(0,0,0,.04);
+    0 2px 7px rgba(0,0,0,.035);
 ```
 
 }
 
 /* =========================================================
-08. SECTION HEADER
+09. SECTION HEADER
 ========================================================= */
 
 .section-header {
 display: flex;
-align-items: center;
 
 ```
-gap: 12px;
+align-items: center;
 
-padding-bottom: 15px;
+gap: 9px;
 
-margin-bottom: 18px;
+padding-bottom: 11px;
 
-border-bottom: 1px solid #eeeeee;
+margin-bottom: 14px;
+
+border-bottom:
+    1px solid #eeeeee;
 ```
 
 }
 
 .section-number {
-width: 34px;
-height: 34px;
+width: 28px;
+height: 28px;
 
 ```
-flex: 0 0 34px;
+flex: 0 0 28px;
 
 display: flex;
+
 align-items: center;
+
 justify-content: center;
 
 background: #ed7d22;
@@ -528,7 +603,8 @@ color: #fff;
 
 border-radius: 5px;
 
-font-size: 11px;
+font-size: 10px;
+
 font-weight: 700;
 ```
 
@@ -538,34 +614,40 @@ font-weight: 700;
 color: #222;
 
 ```
-font-size: 16px;
+font-size: 14px;
+
 font-weight: 700;
 ```
 
 }
 
 .section-header p {
-margin-top: 3px;
+margin-top: 2px;
 
 ```
-color: #777;
+color: #888;
 
-font-size: 11px;
+font-size: 9px;
 ```
 
 }
 
 /* =========================================================
-09. FORM GRID
+10. FORM GRID
 ========================================================= */
 
 .form-grid {
 display: grid;
 
 ```
-gap: 15px;
+gap: 12px;
 ```
 
+}
+
+.grid-2 {
+grid-template-columns:
+repeat(2, minmax(0, 1fr));
 }
 
 .grid-3 {
@@ -575,14 +657,11 @@ repeat(3, minmax(0, 1fr));
 
 .grid-4 {
 grid-template-columns:
-1.3fr
-1fr
-1fr
-1fr;
+repeat(4, minmax(0, 1fr));
 }
 
 /* =========================================================
-10. FORM GROUP
+11. FORM GROUP
 ========================================================= */
 
 .form-group {
@@ -590,27 +669,27 @@ min-width: 0;
 
 ```
 display: flex;
-flex-direction: column;
 
-margin-bottom: 0;
+flex-direction: column;
 ```
 
 }
 
 .form-group label {
-margin-bottom: 7px;
+margin-bottom: 5px;
 
 ```
 color: #333;
 
-font-size: 12px;
+font-size: 10px;
+
 font-weight: 600;
 ```
 
 }
 
 /* =========================================================
-11. INPUT & SELECT
+12. INPUT SELECT
 ========================================================= */
 
 input,
@@ -618,19 +697,20 @@ select {
 width: 100%;
 
 ```
-height: 40px;
+height: 36px;
 
-padding: 9px 11px;
+padding: 7px 9px;
 
 background: #fff;
 
-border: 1px solid #dcdcdc;
+border:
+    1px solid #d6d6d6;
 
-border-radius: 6px;
+border-radius: 5px;
 
 color: #333;
 
-font-size: 13px;
+font-size: 11px;
 
 transition:
     border-color .15s,
@@ -647,7 +727,8 @@ outline: none;
 border-color: #ed7d22;
 
 box-shadow:
-    0 0 0 2px rgba(237,125,34,.10);
+    0 0 0 2px
+    rgba(237,125,34,.08);
 ```
 
 }
@@ -657,7 +738,7 @@ color: #aaa;
 }
 
 select:disabled {
-background: #f2f2f2;
+background: #f3f3f3;
 
 ```
 color: #999;
@@ -667,20 +748,12 @@ cursor: not-allowed;
 
 }
 
-input[type="number"] {
-text-align: left;
-}
-
-/* =========================================================
-DATE INPUT
-========================================================= */
-
 input[type="date"] {
 cursor: pointer;
 }
 
 /* =========================================================
-12. AUTO FIELD
+13. AUTO FIELD
 ========================================================= */
 
 .auto-field {
@@ -688,18 +761,19 @@ min-width: 0;
 
 ```
 display: flex;
+
 flex-direction: column;
 ```
 
 }
 
 .auto-field label {
-margin-bottom: 7px;
+margin-bottom: 4px;
 
 ```
-color: #666;
+color: #707070;
 
-font-size: 10px;
+font-size: 9px;
 
 font-weight: 700;
 
@@ -716,22 +790,26 @@ width: 100%;
 ```
 min-width: 0;
 
-min-height: 40px;
+height: 36px;
 
-padding: 9px 11px;
+min-height: 36px;
+
+padding: 7px 9px;
 
 display: flex;
+
 align-items: center;
 
 background: #f7f7f7;
 
 color: #333;
 
-border: 1px solid #d4d4d4;
+border:
+    1px solid #d4d4d4;
 
-border-radius: 6px;
+border-radius: 5px;
 
-font-size: 13px;
+font-size: 11px;
 
 font-weight: 600;
 
@@ -745,45 +823,84 @@ text-overflow: ellipsis;
 }
 
 /* =========================================================
-13. INFO GRID
+14. SECTION 2
+MAKLUMAT POS / ANGGOTA
 ========================================================= */
 
-.info-grid {
+.anggota-info-grid {
 display: grid;
 
 ```
 grid-template-columns:
-    repeat(4, minmax(0, 1fr));
+    1fr 1fr 1fr;
 
-gap: 14px;
+gap: 11px 14px;
 
-margin-top: 16px;
+margin-top: 2px;
 ```
 
 }
 
+/* ---------------------------------------------------------
+ROW 1
+
+No. SKB
+No. Anggota
+Unit
+--------------------------------------------------------- */
+
+/* ---------------------------------------------------------
+ROW 2
+
+Kawasan
+Wilayah
+--------------------------------------------------------- */
+
+/*
+Row 2 tidak perlu full width.
+Ruang kosong di kanan dibiarkan supaya
+layout tidak terlalu panjang.
+*/
+
+/* ---------------------------------------------------------
+ROW 3
+
+Nama Ketua Unit
+Nama Ketua Pos
+--------------------------------------------------------- */
+
+.anggota-info-grid .ketua-unit {
+grid-column: span 1;
+}
+
+.anggota-info-grid .ketua-pos {
+grid-column: span 1;
+}
+
 /* =========================================================
-14. SUB SECTION
+15. SUB SECTION
 ========================================================= */
 
 .sub-section {
-margin-top: 18px;
+margin-top: 14px;
 
 ```
-padding-top: 16px;
+padding-top: 13px;
 
-border-top: 1px solid #eeeeee;
+border-top:
+    1px solid #eeeeee;
 ```
 
 }
 
 .sub-title {
-margin-bottom: 12px;
+margin-bottom: 9px;
 
 ```
 color: #333;
 
-font-size: 12px;
+font-size: 10px;
+
 font-weight: 700;
 
 text-transform: uppercase;
@@ -794,20 +911,21 @@ letter-spacing: .2px;
 }
 
 /* =========================================================
-15. SPECIAL DUTY CARD
+16. SPECIAL DUTY CARD
 ========================================================= */
 
 .special-duty-card {
-padding: 16px;
+padding: 13px;
 
 ```
-margin-bottom: 14px;
+margin-bottom: 10px;
 
 background: #fff;
 
-border: 1px solid #dedede;
+border:
+    1px solid #dedede;
 
-border-radius: 7px;
+border-radius: 6px;
 ```
 
 }
@@ -825,15 +943,17 @@ display: flex;
 
 ```
 align-items: center;
+
 justify-content: space-between;
 
-gap: 15px;
+gap: 12px;
 
-margin-bottom: 15px;
+margin-bottom: 11px;
 
-padding-bottom: 12px;
+padding-bottom: 9px;
 
-border-bottom: 1px solid #eeeeee;
+border-bottom:
+    1px solid #eeeeee;
 ```
 
 }
@@ -844,7 +964,7 @@ display: block;
 ```
 color: #333;
 
-font-size: 12px;
+font-size: 11px;
 ```
 
 }
@@ -853,17 +973,17 @@ font-size: 12px;
 display: block;
 
 ```
-margin-top: 3px;
+margin-top: 2px;
 
 color: #888;
 
-font-size: 10px;
+font-size: 9px;
 ```
 
 }
 
 /* =========================================================
-16. RADIO
+17. RADIO
 ========================================================= */
 
 .radio-group {
@@ -872,9 +992,7 @@ display: flex;
 ```
 align-items: center;
 
-gap: 15px;
-
-flex-shrink: 0;
+gap: 13px;
 ```
 
 }
@@ -891,7 +1009,7 @@ margin: 0;
 
 color: #444;
 
-font-size: 12px;
+font-size: 10px;
 
 font-weight: 600;
 
@@ -901,10 +1019,12 @@ cursor: pointer;
 }
 
 .radio-option input {
-width: auto;
+width: 14px;
 
 ```
-height: auto;
+height: 14px;
+
+padding: 0;
 
 accent-color: #ed7d22;
 
@@ -914,7 +1034,7 @@ cursor: pointer;
 }
 
 /* =========================================================
-17. KLM GRID
+18. KLM GRID
 ========================================================= */
 
 .klm-grid {
@@ -923,9 +1043,10 @@ display: flex;
 ```
 flex-direction: column;
 
-border: 1px solid #e1e1e1;
+border:
+    1px solid #dedede;
 
-border-radius: 6px;
+border-radius: 5px;
 
 overflow: hidden;
 ```
@@ -933,23 +1054,24 @@ overflow: hidden;
 }
 
 .klm-row {
-min-height: 54px;
+min-height: 48px;
 
 ```
-padding: 8px 12px;
+padding: 6px 9px;
 
 display: grid;
 
 grid-template-columns:
     minmax(180px, 1fr)
-    130px
-    140px;
+    120px
+    130px;
 
 align-items: center;
 
-gap: 12px;
+gap: 10px;
 
-border-bottom: 1px solid #eeeeee;
+border-bottom:
+    1px solid #eeeeee;
 ```
 
 }
@@ -968,16 +1090,19 @@ display: flex;
 ```
 align-items: center;
 
-gap: 8px;
+gap: 7px;
 ```
 
 }
 
 .klm-check input {
-width: 16px;
-height: 16px;
+width: 15px;
 
 ```
+height: 15px;
+
+padding: 0;
+
 accent-color: #ed7d22;
 
 cursor: pointer;
@@ -991,7 +1116,7 @@ margin: 0;
 ```
 color: #333;
 
-font-size: 12px;
+font-size: 10px;
 
 font-weight: 600;
 
@@ -1001,14 +1126,14 @@ cursor: pointer;
 }
 
 /* =========================================================
-KLM INPUT
+KLM JAM
 ========================================================= */
 
 .klm-row > input {
-height: 36px;
+height: 34px;
 
 ```
-font-size: 12px;
+font-size: 10px;
 ```
 
 }
@@ -1018,10 +1143,10 @@ KLM RM
 ========================================================= */
 
 .klm-rm {
-min-height: 36px;
+min-height: 34px;
 
 ```
-padding: 8px 10px;
+padding: 7px 9px;
 
 display: flex;
 
@@ -1029,13 +1154,14 @@ align-items: center;
 
 background: #f7f7f7;
 
-border: 1px solid #dcdcdc;
+border:
+    1px solid #d4d4d4;
 
 border-radius: 5px;
 
 color: #333;
 
-font-size: 12px;
+font-size: 10px;
 
 font-weight: 600;
 ```
@@ -1043,52 +1169,54 @@ font-weight: 600;
 }
 
 /* =========================================================
-18. TOTAL CARD
+19. TOTAL
 ========================================================= */
 
 .total-card {
-margin-bottom: 18px;
+margin-bottom: 12px;
 
 ```
-padding: 18px 22px;
+padding: 14px 18px;
 
 background: #343a40;
 
-border-radius: 8px;
+border-radius: 7px;
 
 color: #fff;
 
 display: flex;
 
 align-items: center;
+
 justify-content: flex-end;
 
-gap: 50px;
+gap: 35px;
 ```
 
 }
 
 .total-card > div {
-min-width: 160px;
+min-width: 130px;
 
 ```
 display: flex;
+
 flex-direction: column;
 
-gap: 4px;
+gap: 3px;
 ```
 
 }
 
 .total-card span {
-color: #bdbdbd;
+color: #bbb;
 
 ```
-font-size: 9px;
+font-size: 8px;
 
 font-weight: 700;
 
-letter-spacing: .3px;
+letter-spacing: .2px;
 ```
 
 }
@@ -1097,7 +1225,7 @@ letter-spacing: .3px;
 color: #fff;
 
 ```
-font-size: 18px;
+font-size: 16px;
 
 font-weight: 700;
 ```
@@ -1105,7 +1233,7 @@ font-weight: 700;
 }
 
 /* =========================================================
-19. FORM ACTIONS
+20. FORM ACTIONS
 ========================================================= */
 
 .form-actions {
@@ -1114,38 +1242,30 @@ display: flex;
 ```
 justify-content: flex-end;
 
-gap: 10px;
+gap: 8px;
 ```
 
 }
 
 .btn {
-min-width: 120px;
+min-width: 110px;
 
 ```
-height: 40px;
+height: 36px;
 
-padding: 0 18px;
+padding: 0 15px;
 
 border: none;
 
-border-radius: 6px;
+border-radius: 5px;
 
-font-size: 13px;
+font-size: 11px;
 
 font-weight: 600;
 
 cursor: pointer;
-
-transition:
-    background .15s,
-    transform .1s;
 ```
 
-}
-
-.btn:active {
-transform: translateY(1px);
 }
 
 .btn-primary {
@@ -1167,7 +1287,8 @@ background: #fff;
 ```
 color: #444;
 
-border: 1px solid #d5d5d5;
+border:
+    1px solid #d2d2d2;
 ```
 
 }
@@ -1177,7 +1298,7 @@ background: #f3f3f3;
 }
 
 /* =========================================================
-20. MOBILE BOTTOM NAV
+21. MOBILE BOTTOM NAV
 ========================================================= */
 
 .mobile-bottom-nav {
@@ -1185,58 +1306,31 @@ display: none;
 }
 
 /* =========================================================
-21. SCROLLBAR
-========================================================= */
-
-.sidebar-menu::-webkit-scrollbar {
-width: 5px;
-}
-
-.sidebar-menu::-webkit-scrollbar-track {
-background: transparent;
-}
-
-.sidebar-menu::-webkit-scrollbar-thumb {
-background: rgba(255,255,255,.15);
-
-```
-border-radius: 5px;
-```
-
-}
-
-/* =========================================================
 22. TABLET
 ========================================================= */
 
-@media (max-width: 1100px) {
+@media (max-width: 1050px) {
 
 ```
 .sidebar {
-    width: 230px;
+    width: 220px;
 }
 
 
 .main-content {
-    margin-left: 230px;
+    margin-left: 220px;
 }
 
 
-.page-container {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-
-.info-grid {
+.anggota-info-grid {
     grid-template-columns:
-        repeat(3, minmax(0, 1fr));
+        1fr 1fr 1fr;
 }
 
 
 .grid-4 {
     grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+        1fr 1fr;
 }
 ```
 
@@ -1250,38 +1344,38 @@ border-radius: 5px;
 
 ```
 body {
-    padding-bottom: 65px;
-
-    background: #f8f9fa;
+    padding-bottom: 62px;
 }
 
 
-/* SIDEBAR HILANG */
+/* -----------------------------------------------------
+   SIDEBAR
+   ----------------------------------------------------- */
 
 .sidebar {
     display: none;
 }
 
 
-/* MAIN FULL WIDTH */
+/* -----------------------------------------------------
+   MAIN
+   ----------------------------------------------------- */
 
 .main-content {
-    margin-left: 0;
-
     width: 100%;
+
+    margin-left: 0;
 }
 
 
-/* =====================================================
-   TOPBAR MOBILE
-   ===================================================== */
+/* -----------------------------------------------------
+   TOPBAR
+   ----------------------------------------------------- */
 
 .topbar {
-    min-height: 64px;
+    min-height: 60px;
 
-    padding: 10px 15px;
-
-    gap: 10px;
+    padding: 10px 13px;
 }
 
 
@@ -1292,14 +1386,14 @@ body {
 
     color: #ed7d22;
 
-    font-size: 11px;
+    font-size: 8px;
 
     font-weight: 700;
 }
 
 
 .page-heading h1 {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 
@@ -1313,126 +1407,171 @@ body {
 }
 
 
-/* =====================================================
+/* -----------------------------------------------------
    PAGE
-   ===================================================== */
+   ----------------------------------------------------- */
 
 .page-container {
-    padding: 14px 12px 20px;
+    padding: 10px 8px 18px;
 }
 
 
-/* =====================================================
-   CARD
-   ===================================================== */
+/* -----------------------------------------------------
+   HERO
+   ----------------------------------------------------- */
 
-.form-card {
-    padding: 15px;
+.hero,
+.page-hero {
+    padding: 10px 12px;
 
-    margin-bottom: 12px;
-
-    border-radius: 7px;
+    margin-bottom: 9px;
 }
 
 
-/* =====================================================
-   SECTION HEADER
-   ===================================================== */
-
-.section-header {
-    gap: 9px;
-
-    padding-bottom: 12px;
-
-    margin-bottom: 14px;
-}
-
-
-.section-number {
-    width: 30px;
-    height: 30px;
-
-    flex: 0 0 30px;
-
-    font-size: 10px;
-}
-
-
-.section-header h2 {
+.hero h1,
+.page-hero h1 {
     font-size: 14px;
 }
 
 
-.section-header p {
-    font-size: 10px;
+.hero p,
+.page-hero p {
+    font-size: 9px;
 }
 
 
-/* =====================================================
-   GRID
-   ===================================================== */
+/* -----------------------------------------------------
+   CARD
+   ----------------------------------------------------- */
 
-.grid-3,
-.grid-4 {
-    grid-template-columns: 1fr;
+.form-card {
+    padding: 12px;
+
+    margin-bottom: 9px;
+
+    border-radius: 6px;
 }
 
 
-.info-grid {
-    grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+/* -----------------------------------------------------
+   SECTION HEADER
+   ----------------------------------------------------- */
 
-    gap: 10px;
+.section-header {
+    gap: 7px;
+
+    padding-bottom: 9px;
+
+    margin-bottom: 11px;
 }
 
 
-/* =====================================================
-   INPUT
-   ===================================================== */
+.section-number {
+    width: 25px;
+    height: 25px;
 
-input,
-select {
-    height: 38px;
+    flex: 0 0 25px;
 
+    font-size: 9px;
+}
+
+
+.section-header h2 {
     font-size: 12px;
 }
 
 
-.form-group label {
-    font-size: 11px;
-
-    margin-bottom: 5px;
+.section-header p {
+    font-size: 8px;
 }
 
 
-/* =====================================================
-   AUTO FIELD
-   ===================================================== */
+/* -----------------------------------------------------
+   GRID
+   ----------------------------------------------------- */
 
-.auto-field label {
+.grid-2,
+.grid-3,
+.grid-4 {
+    grid-template-columns:
+        1fr;
+}
+
+
+/* -----------------------------------------------------
+   SECTION 2 MOBILE
+   ----------------------------------------------------- */
+
+.anggota-info-grid {
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 9px 10px;
+}
+
+
+/*
+   Ketua Unit & Ketua Pos
+   jadi dua lajur juga
+*/
+
+.anggota-info-grid .ketua-unit,
+.anggota-info-grid .ketua-pos {
+    grid-column: span 1;
+}
+
+
+/* -----------------------------------------------------
+   FORM
+   ----------------------------------------------------- */
+
+.form-group label {
     font-size: 9px;
 
-    margin-bottom: 5px;
+    margin-bottom: 4px;
+}
+
+
+input,
+select {
+    height: 35px;
+
+    padding: 6px 8px;
+
+    font-size: 10px;
+}
+
+
+/* -----------------------------------------------------
+   AUTO
+   ----------------------------------------------------- */
+
+.auto-field label {
+    font-size: 8px;
+
+    margin-bottom: 3px;
 }
 
 
 .auto-field > span {
-    min-height: 38px;
+    height: 35px;
 
-    padding: 8px 9px;
+    min-height: 35px;
 
-    font-size: 11px;
+    padding: 6px 8px;
+
+    font-size: 10px;
 }
 
 
-/* =====================================================
+/* -----------------------------------------------------
    SPECIAL DUTY
-   ===================================================== */
+   ----------------------------------------------------- */
 
 .special-duty-card {
-    padding: 12px;
+    padding: 10px;
 
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 
@@ -1441,12 +1580,21 @@ select {
 
     flex-direction: column;
 
-    gap: 10px;
+    gap: 8px;
+
+    margin-bottom: 9px;
+
+    padding-bottom: 8px;
+}
+
+
+.special-duty-header strong {
+    font-size: 10px;
 }
 
 
 .special-duty-header span {
-    font-size: 9px;
+    font-size: 8px;
 }
 
 
@@ -1457,19 +1605,21 @@ select {
 }
 
 
-/* =====================================================
+/* -----------------------------------------------------
    KLM
-   ===================================================== */
+   ----------------------------------------------------- */
 
 .klm-row {
+    min-height: 45px;
+
+    padding: 5px 7px;
+
     grid-template-columns:
-        1fr 75px 100px;
+        minmax(0, 1fr)
+        65px
+        85px;
 
-    gap: 7px;
-
-    min-height: 48px;
-
-    padding: 7px 8px;
+    gap: 6px;
 }
 
 
@@ -1478,43 +1628,44 @@ select {
 }
 
 
-.klm-check label {
-    font-size: 10px;
+.klm-check input {
+    width: 13px;
+
+    height: 13px;
 }
 
 
-.klm-check input {
-    width: 14px;
-    height: 14px;
+.klm-check label {
+    font-size: 9px;
 }
 
 
 .klm-row > input {
-    height: 34px;
+    height: 32px;
 
-    padding: 7px;
+    padding: 5px;
 
-    font-size: 10px;
+    font-size: 9px;
 }
 
 
 .klm-rm {
-    min-height: 34px;
+    min-height: 32px;
 
-    padding: 7px;
+    padding: 6px;
 
-    font-size: 10px;
+    font-size: 9px;
 }
 
 
-/* =====================================================
+/* -----------------------------------------------------
    TOTAL
-   ===================================================== */
+   ----------------------------------------------------- */
 
 .total-card {
-    padding: 15px;
+    padding: 12px;
 
-    gap: 20px;
+    gap: 15px;
 
     justify-content: space-between;
 }
@@ -1525,26 +1676,27 @@ select {
 }
 
 
-.total-card strong {
-    font-size: 15px;
-}
-
-
 .total-card span {
-    font-size: 8px;
+    font-size: 7px;
 }
 
 
-/* =====================================================
+.total-card strong {
+    font-size: 13px;
+}
+
+
+/* -----------------------------------------------------
    BUTTON
-   ===================================================== */
+   ----------------------------------------------------- */
 
 .form-actions {
     display: grid;
 
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns:
+        1fr 1.4fr;
 
-    gap: 8px;
+    gap: 7px;
 }
 
 
@@ -1553,15 +1705,15 @@ select {
 
     min-width: 0;
 
-    height: 40px;
+    height: 36px;
 
-    font-size: 12px;
+    font-size: 10px;
 }
 
 
-/* =====================================================
+/* -----------------------------------------------------
    BOTTOM NAV
-   ===================================================== */
+   ----------------------------------------------------- */
 
 .mobile-bottom-nav {
     position: fixed;
@@ -1574,7 +1726,8 @@ select {
 
     background: #fff;
 
-    border-top: 1px solid #ddd;
+    border-top:
+        1px solid #ddd;
 
     display: grid;
 
@@ -1594,6 +1747,7 @@ select {
     flex-direction: column;
 
     align-items: center;
+
     justify-content: center;
 
     gap: 3px;
@@ -1601,20 +1755,18 @@ select {
     color: #777;
 
     text-decoration: none;
-
-    font-size: 9px;
 }
 
 
 .mobile-nav-item span {
-    font-size: 16px;
+    font-size: 15px;
 
     line-height: 1;
 }
 
 
 .mobile-nav-item small {
-    font-size: 9px;
+    font-size: 8px;
 }
 
 
@@ -1635,44 +1787,44 @@ select {
 
 ```
 .page-container {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 
 .form-card {
-    padding: 12px;
+    padding: 10px;
 }
 
 
-.info-grid {
-    grid-template-columns: 1fr;
+.anggota-info-grid {
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 8px;
+}
+
+
+.auto-field > span {
+    font-size: 9px;
 }
 
 
 .klm-row {
     grid-template-columns:
-        1fr 65px 90px;
+        minmax(0, 1fr)
+        60px
+        78px;
 }
 
 
 .klm-check label {
-    font-size: 9px;
+    font-size: 8px;
 }
 
 
-.total-card {
-    gap: 10px;
-}
-
-
-.total-card strong {
-    font-size: 13px;
-}
-
-
-.total-card span {
-    font-size: 7px;
+.klm-rm {
+    font-size: 8px;
 }
 ```
 
