@@ -1,9 +1,10 @@
-
+```css
 /* =========================================================
    DUTY ANGGOTA
    LAPORAN ANGGARAN KERJA LEBIH MASA
-   CORPORATE GREY + ORANGE
-   RESPONSIVE DESKTOP + MOBILE
+
+   CORPORATE:
+   GREY + ORANGE + WHITE
    ========================================================= */
 
 
@@ -15,33 +16,48 @@
     box-sizing:border-box;
 }
 
+
 html,
 body{
+
     margin:0;
+
     padding:0;
+
     width:100%;
+
 }
 
+
 body{
-    background:#f1f3f5;
-    color:#252525;
-    font-family:Arial, Helvetica, sans-serif;
+
+    background:#f2f2f2;
+
+    color:#222;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
     font-size:14px;
+
 }
 
 
 /* =========================================================
-   DESKTOP PAGE
+   PAGE WRAPPER
    ========================================================= */
 
 .page-wrapper{
 
     width:100%;
-    max-width:1450px;
+
+    max-width:1380px;
 
     margin:0 auto;
 
-    padding:25px 30px 40px;
+    padding:22px 28px 45px;
 
 }
 
@@ -52,40 +68,117 @@ body{
 
 .page-header{
 
-    background:#3d4145;
+    min-height:82px;
 
-    color:#ffffff;
+    padding:17px 20px;
 
-    border-radius:8px;
+    margin-bottom:18px;
 
-    padding:22px 28px;
+    display:flex;
 
-    margin-bottom:20px;
+    align-items:center;
 
-    border-left:6px solid #f28c28;
+    justify-content:space-between;
+
+    background:#3e3e3e;
+
+    color:#fff;
+
+    border-left:5px solid #ed7d22;
+
+    border-radius:7px;
 
     box-shadow:
-        0 2px 8px rgba(0,0,0,.10);
+        0 2px 7px rgba(0,0,0,.08);
 
 }
+
+
+.header-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:13px;
+
+}
+
+
+.header-icon{
+
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#ed7d22;
+
+    color:#fff;
+
+    border-radius:5px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+}
+
 
 .page-header h1{
 
     margin:0;
 
-    font-size:24px;
-
-    font-weight:700;
+    font-size:20px;
 
     letter-spacing:.3px;
 
 }
 
+
 .page-header p{
 
-    margin:7px 0 0;
+    margin:5px 0 0;
 
-    color:#d9dde0;
+    color:#cfcfcf;
+
+    font-size:10px;
+
+    letter-spacing:.3px;
+
+}
+
+
+.header-user{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-end;
+
+    gap:3px;
+
+}
+
+
+.header-user span{
+
+    color:#bdbdbd;
+
+    font-size:10px;
+
+}
+
+
+.header-user strong{
+
+    color:#fff;
 
     font-size:13px;
 
@@ -93,79 +186,30 @@ body{
 
 
 /* =========================================================
-   MOBILE TOPBAR
+   MAIN CARD
+   SETIAP SECTION MESTI CARD
    ========================================================= */
 
-.mobile-topbar{
+.card{
 
-    display:none;
+    position:relative;
 
-}
+    width:100%;
 
+    margin-bottom:18px;
 
-/* =========================================================
-   USER BAR
-   ========================================================= */
+    background:#fff;
 
-.user-bar{
+    border:1px solid #d5d5d5;
 
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    gap:20px;
-
-    background:#ffffff;
-
-    border:1px solid #d7dadd;
-
-    border-left:4px solid #f28c28;
+    border-left:5px solid #ed7d22;
 
     border-radius:7px;
-
-    padding:12px 16px;
-
-    margin-bottom:20px;
-
-}
-
-.user-label{
-
-    color:#777;
-
-    font-size:12px;
-
-}
-
-.user-name{
-
-    color:#333;
-
-    font-weight:700;
-
-}
-
-
-/* =========================================================
-   SECTION
-   ========================================================= */
-
-.form-section{
-
-    background:#ffffff;
-
-    border:1px solid #d8dadd;
-
-    border-radius:8px;
-
-    margin-bottom:20px;
 
     overflow:hidden;
 
     box-shadow:
-        0 2px 6px rgba(0,0,0,.06);
+        0 2px 8px rgba(0,0,0,.06);
 
 }
 
@@ -174,7 +218,11 @@ body{
    SECTION HEADER
    ========================================================= */
 
-.section-header{
+.section-title{
+
+    min-height:60px;
+
+    padding:11px 18px;
 
     display:flex;
 
@@ -182,17 +230,22 @@ body{
 
     gap:12px;
 
-    background:#4a4e52;
+    background:#454545;
 
-    color:#ffffff;
+    color:#fff;
 
-    padding:13px 18px;
-
-    border-bottom:4px solid #f28c28;
+    border-bottom:3px solid #ed7d22;
 
 }
 
-.section-number{
+
+.section-no{
+
+    width:34px;
+
+    height:34px;
+
+    min-width:34px;
 
     display:flex;
 
@@ -200,406 +253,605 @@ body{
 
     justify-content:center;
 
-    width:30px;
+    background:#ed7d22;
 
-    height:30px;
-
-    min-width:30px;
-
-    background:#f28c28;
-
-    color:#ffffff;
+    color:#fff;
 
     border-radius:5px;
 
-    font-weight:700;
+    font-size:11px;
 
-    font-size:14px;
-
-}
-
-.section-title{
-
-    font-size:16px;
-
-    font-weight:700;
+    font-weight:bold;
 
 }
 
-.section-body{
 
-    padding:20px;
+.section-title-text strong{
+
+    display:block;
+
+    font-size:13px;
+
+    letter-spacing:.2px;
+
+}
+
+
+.section-title-text small{
+
+    display:block;
+
+    margin-top:3px;
+
+    color:#cfcfcf;
+
+    font-size:9px;
 
 }
 
 
 /* =========================================================
-   FORM GRID
+   SECTION CONTENT
    ========================================================= */
 
-.form-grid{
+.section-content{
 
-    display:grid;
+    padding:18px;
 
-    grid-template-columns:
-        repeat(4,minmax(0,1fr));
-
-    gap:16px;
+    background:#fff;
 
 }
 
-.form-grid-2{
 
-    display:grid;
+/* =========================================================
+   FIELD
+   ========================================================= */
 
-    grid-template-columns:
-        repeat(2,minmax(0,1fr));
-
-    gap:16px;
-
-}
-
-.form-grid-3{
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(3,minmax(0,1fr));
-
-    gap:16px;
-
-}
-
-.form-group{
+.field{
 
     display:flex;
 
     flex-direction:column;
 
-    gap:6px;
-
-}
-
-.form-group.full{
-
-    grid-column:1 / -1;
+    gap:5px;
 
 }
 
 
-/* =========================================================
-   LABEL
-   ========================================================= */
+.field label,
+.auto-field label{
 
-.form-label{
+    color:#707070;
 
-    color:#4b4b4b;
+    font-size:9px;
 
-    font-weight:700;
+    font-weight:bold;
 
-    font-size:13px;
+    text-transform:uppercase;
+
+    letter-spacing:.2px;
 
 }
 
 
 /* =========================================================
-   INPUT + SELECT
+   INPUT / SELECT
    ========================================================= */
 
-input[type="text"],
-input[type="number"],
 input[type="date"],
+input[type="number"],
 select{
 
     width:100%;
 
-    height:40px;
+    height:38px;
 
-    padding:0 12px;
+    padding:0 10px;
 
-    border:1px solid #c9cdd1;
+    background:#fff;
 
-    border-radius:5px;
+    color:#222;
 
-    background:#ffffff;
+    border:1px solid #cfcfcf;
 
-    color:#252525;
-
-    font-size:14px;
+    border-radius:4px;
 
     outline:none;
 
-    transition:
-        border-color .15s,
-        box-shadow .15s;
+    font-family:inherit;
+
+    font-size:12px;
 
 }
 
-input[type="text"]:focus,
-input[type="number"]:focus,
+
 input[type="date"]:focus,
+input[type="number"]:focus,
 select:focus{
 
-    border-color:#f28c28;
+    border-color:#ed7d22;
 
     box-shadow:
-        0 0 0 3px rgba(242,140,40,.12);
-
-}
-
-input:disabled,
-select:disabled{
-
-    background:#eeeeee;
-
-    color:#888;
-
-    cursor:not-allowed;
+        0 0 0 2px rgba(237,125,34,.12);
 
 }
 
 
 /* =========================================================
-   INFORMATION BOX
+   SECTION 01
+   TARIKH
    ========================================================= */
 
-.info-box{
+.date-layout{
 
-    min-height:40px;
+    display:flex;
+
+    align-items:flex-end;
+
+    gap:24px;
+
+}
+
+
+.date-field{
+
+    width:185px;
+
+}
+
+
+.auto-group{
+
+    display:flex;
+
+    align-items:flex-end;
+
+    gap:10px;
+
+}
+
+
+/* =========================================================
+   AUTO FIELD
+   RUANG KECIL
+   ========================================================= */
+
+.auto-field{
+
+    width:max-content;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:5px;
+
+}
+
+
+.auto-field > span{
+
+    min-width:65px;
+
+    width:max-content;
+
+    max-width:180px;
+
+    min-height:38px;
+
+    padding:0 10px;
 
     display:flex;
 
     align-items:center;
 
-    padding:0 12px;
-
-    background:#f5f6f7;
-
-    border:1px solid #d4d7da;
-
-    border-radius:5px;
+    background:#f7f7f7;
 
     color:#333;
+
+    border:1px solid #d4d4d4;
+
+    border-radius:4px;
+
+    font-size:12px;
 
     font-weight:600;
 
-}
-
-.info-box.orange{
-
-    background:#fff6ed;
-
-    border-color:#f3c08c;
-
-    color:#9a510d;
+    white-space:nowrap;
 
 }
 
 
-/* =========================================================
-   DATE SUMMARY
-   ========================================================= */
+.auto-field.rm > span{
 
-.date-summary{
+    background:#fff5ec;
 
-    display:grid;
+    color:#bd5c0b;
 
-    grid-template-columns:
-        repeat(3,1fr);
-
-    gap:12px;
-
-}
-
-.date-box{
-
-    background:#f5f6f7;
-
-    border:1px solid #d6d9dc;
-
-    border-radius:6px;
-
-    padding:12px;
-
-}
-
-.date-box-label{
-
-    display:block;
-
-    color:#777;
-
-    font-size:11px;
-
-    margin-bottom:5px;
-
-    text-transform:uppercase;
-
-}
-
-.date-box-value{
-
-    color:#333;
-
-    font-weight:700;
-
-    font-size:15px;
+    border-color:#edbd92;
 
 }
 
 
 /* =========================================================
-   ANGGOTA
+   SECTION 02
+   PILIHAN
    ========================================================= */
 
-.member-info{
-
-    margin-top:18px;
-
-    padding-top:18px;
-
-    border-top:1px solid #e1e3e5;
-
-}
-
-.member-info-title{
-
-    color:#4a4e52;
-
-    font-size:14px;
-
-    font-weight:700;
-
-    margin-bottom:12px;
-
-}
-
-.member-grid{
+.selection-grid{
 
     display:grid;
 
     grid-template-columns:
-        repeat(4,1fr);
+        1fr 1fr 1.25fr;
 
-    gap:12px;
+    gap:14px;
+
+}
+
+
+.section3-selection{
+
+    grid-template-columns:
+        330px 330px;
 
 }
 
 
 /* =========================================================
-   DUTY SUMMARY
+   AUTO PANEL
    ========================================================= */
 
-.duty-summary{
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(4,1fr);
-
-    gap:12px;
+.auto-panel,
+.sub-panel{
 
     margin-top:16px;
 
-}
-
-.duty-box{
-
-    background:#f6f7f8;
-
-    border:1px solid #d7dadd;
-
-    border-radius:6px;
-
-    padding:13px;
-
-}
-
-.duty-box-label{
-
-    color:#777;
-
-    font-size:11px;
-
-    margin-bottom:5px;
-
-}
-
-.duty-box-value{
-
-    color:#333;
-
-    font-size:16px;
-
-    font-weight:700;
-
-}
-
-.duty-box.rm{
-
-    background:#fff6ed;
-
-    border-color:#efbf88;
-
-}
-
-.duty-box.rm .duty-box-value{
-
-    color:#c7630b;
-
-}
-
-
-/* =========================================================
-   SPECIAL DUTY
-   ========================================================= */
-
-.special-duty{
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(2,1fr);
-
-    gap:16px;
-
-}
-
-.special-box{
-
-    border:1px solid #d5d8db;
-
-    border-radius:7px;
-
-    padding:16px;
+    padding:14px;
 
     background:#fafafa;
 
-}
+    border:1px solid #d8d8d8;
 
-.special-box-title{
-
-    font-weight:700;
-
-    color:#414549;
-
-    margin-bottom:12px;
+    border-radius:5px;
 
 }
 
-.radio-group{
+
+.auto-panel{
+
+    border-left:3px solid #888;
+
+}
+
+
+.sub-panel{
+
+    border-left:3px solid #ed7d22;
+
+}
+
+
+.panel-heading{
 
     display:flex;
 
     align-items:center;
 
-    gap:20px;
+    justify-content:space-between;
+
+    margin-bottom:13px;
+
+    padding-bottom:8px;
+
+    color:#555;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+
+.panel-heading span{
+
+    font-size:10px;
+
+    font-weight:bold;
+
+    letter-spacing:.2px;
+
+}
+
+
+/* =========================================================
+   MEMBER AUTO
+   SEMUA KECIL DAN PADAT
+   ========================================================= */
+
+.member-auto-grid{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    align-items:flex-end;
+
+    gap:12px 17px;
+
+}
+
+
+.member-auto-grid .auto-field:nth-child(1){
+
+    width:105px;
+
+}
+
+
+.member-auto-grid .auto-field:nth-child(2){
+
+    width:120px;
+
+}
+
+
+.member-auto-grid .auto-field:nth-child(3){
+
+    width:115px;
+
+}
+
+
+.member-auto-grid .auto-field:nth-child(4){
+
+    width:115px;
+
+}
+
+
+.member-auto-grid .auto-field:nth-child(5){
+
+    width:95px;
+
+}
+
+
+.member-auto-grid .auto-field:nth-child(6){
+
+    width:145px;
+
+}
+
+
+.member-auto-grid .auto-field:nth-child(7){
+
+    width:145px;
+
+}
+
+
+.member-auto-grid .auto-field:nth-child(8){
+
+    width:110px;
+
+}
+
+
+.member-auto-grid .auto-field > span{
+
+    width:100%;
+
+    max-width:none;
+
+}
+
+
+/* =========================================================
+   SECTION 03
+   DUTY AUTO
+   ========================================================= */
+
+.compact-auto-grid{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    align-items:flex-end;
+
+    gap:12px;
+
+    margin-top:15px;
+
+}
+
+
+.compact-auto-grid .auto-field{
+
+    min-width:105px;
+
+}
+
+
+.compact-auto-grid .duty-time{
+
+    min-width:180px;
+
+}
+
+
+.compact-auto-grid .rm{
+
+    min-width:130px;
+
+}
+
+
+.compact-auto-grid .auto-field > span{
+
+    width:max-content;
+
+}
+
+
+/* =========================================================
+   TAMPUNGAN
+   ========================================================= */
+
+.tampungan-grid{
+
+    display:flex;
+
+    align-items:flex-end;
+
+    gap:14px;
+
+}
+
+
+.tampungan-grid > .field:first-child{
+
+    width:300px;
+
+}
+
+
+.small-input{
+
+    width:110px;
+
+}
+
+
+.tampungan-grid .auto-field{
+
+    min-width:125px;
+
+}
+
+
+/* =========================================================
+   SECTION 04
+   SPECIAL CARD
+   ========================================================= */
+
+.special-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:15px;
+
+}
+
+
+.special-card{
+
+    padding:15px;
+
+    background:#fff;
+
+    border:1px solid #d7d7d7;
+
+    border-top:3px solid #ed7d22;
+
+    border-radius:5px;
+
+    box-shadow:
+        0 1px 5px rgba(0,0,0,.04);
+
+}
+
+
+.special-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
 
     margin-bottom:14px;
 
 }
 
-.radio-item{
+
+.special-icon{
+
+    width:30px;
+
+    height:30px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#ed7d22;
+
+    color:#fff;
+
+    border-radius:4px;
+
+    font-size:11px;
+
+    font-weight:bold;
+
+}
+
+
+.special-header strong{
+
+    display:block;
+
+    color:#444;
+
+    font-size:12px;
+
+}
+
+
+.special-header small{
+
+    display:block;
+
+    margin-top:3px;
+
+    color:#999;
+
+    font-size:9px;
+
+}
+
+
+/* =========================================================
+   RADIO
+   ========================================================= */
+
+.radio-row{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:24px;
+
+    padding:9px 10px;
+
+    margin-bottom:14px;
+
+    background:#f7f7f7;
+
+    border:1px solid #e0e0e0;
+
+    border-radius:4px;
+
+}
+
+
+.radio-row label{
 
     display:flex;
 
@@ -607,21 +859,52 @@ select:disabled{
 
     gap:6px;
 
-    color:#444;
+    color:#555;
 
-    cursor:pointer;
+    font-size:11px;
 
 }
+
 
 input[type="radio"],
 input[type="checkbox"]{
 
-    accent-color:#f28c28;
+    accent-color:#ed7d22;
 
 }
 
 
 /* =========================================================
+   SPECIAL VALUES
+   ========================================================= */
+
+.special-values{
+
+    display:flex;
+
+    align-items:flex-end;
+
+    gap:14px;
+
+}
+
+
+.special-values .field{
+
+    width:120px;
+
+}
+
+
+.special-values .auto-field{
+
+    min-width:120px;
+
+}
+
+
+/* =========================================================
+   SECTION 05
    KLM GRID
    ========================================================= */
 
@@ -632,111 +915,103 @@ input[type="checkbox"]{
     grid-template-columns:
         repeat(3,1fr);
 
-    gap:12px;
-
-}
-
-.klm-item{
-
-    display:grid;
-
-    grid-template-columns:
-        28px 1fr;
-
-    gap:8px;
-
-    align-items:start;
-
-    padding:14px;
-
-    background:#fafafa;
-
-    border:1px solid #d8dadd;
-
-    border-radius:6px;
-
-}
-
-.klm-item:hover{
-
-    border-color:#f0ad68;
-
-    background:#fffaf5;
-
-}
-
-.klm-check{
-
-    padding-top:2px;
-
-}
-
-.klm-content{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:8px;
-
-}
-
-.klm-title{
-
-    color:#414549;
-
-    font-weight:700;
-
-}
-
-.klm-rm{
-
-    color:#c7630b;
-
-    font-weight:700;
+    gap:11px;
 
 }
 
 
 /* =========================================================
-   RM
+   KLM CARD
    ========================================================= */
 
-.rm-display{
+.klm-card{
 
-    display:flex;
+    min-height:90px;
 
-    align-items:center;
+    display:grid;
 
-    justify-content:space-between;
+    grid-template-columns:25px 1fr;
 
-    min-height:40px;
+    gap:8px;
 
-    padding:0 12px;
+    padding:11px;
 
-    background:#fff6ed;
+    background:#fff;
 
-    border:1px solid #efbf88;
+    border:1px solid #d7d7d7;
 
     border-radius:5px;
 
+    box-shadow:
+        0 1px 4px rgba(0,0,0,.03);
+
+    transition:
+        border-color .15s ease,
+        box-shadow .15s ease;
+
 }
 
-.rm-label{
 
-    color:#777;
+.klm-card:hover{
 
-    font-size:12px;
+    border-color:#ed7d22;
+
+    box-shadow:
+        0 2px 7px rgba(0,0,0,.07);
 
 }
 
-.rm-value{
 
-    color:#c7630b;
+.klm-check{
 
-    font-size:14px;
+    padding-top:3px;
 
-    font-weight:700;
+}
+
+
+.klm-main{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 78px;
+
+    align-items:center;
+
+    gap:7px;
+
+}
+
+
+.klm-main strong{
+
+    color:#444;
+
+    font-size:11px;
+
+}
+
+
+.klm-main input{
+
+    width:78px;
+
+    height:32px;
+
+    padding:0 7px;
+
+}
+
+
+.klm-main span{
+
+    grid-column:1 / -1;
+
+    color:#bd5c0b;
+
+    font-size:11px;
+
+    font-weight:bold;
 
 }
 
@@ -745,7 +1020,9 @@ input[type="checkbox"]{
    TOTAL
    ========================================================= */
 
-.total-box{
+.total-area{
+
+    min-height:72px;
 
     display:flex;
 
@@ -755,124 +1032,110 @@ input[type="checkbox"]{
 
     gap:20px;
 
-    padding:18px 20px;
-
     margin-top:18px;
 
-    background:#4a4e52;
+    padding:13px 16px;
 
-    color:#ffffff;
+    background:#444;
 
-    border-radius:7px;
-
-    border-left:5px solid #f28c28;
-
-}
-
-.total-label{
-
-    font-size:15px;
-
-    font-weight:700;
-
-}
-
-.total-value{
-
-    font-size:21px;
-
-    font-weight:700;
-
-    color:#ffb36a;
-
-}
-
-
-/* =========================================================
-   BUTTON
-   ========================================================= */
-
-.form-actions{
-
-    display:flex;
-
-    justify-content:flex-end;
-
-    align-items:center;
-
-    gap:10px;
-
-    margin-top:20px;
-
-    padding-top:18px;
-
-    border-top:1px solid #dedfe1;
-
-}
-
-.btn{
-
-    min-width:130px;
-
-    height:42px;
-
-    padding:0 18px;
+    border-left:4px solid #ed7d22;
 
     border-radius:5px;
 
-    border:1px solid transparent;
+}
 
-    font-size:14px;
 
-    font-weight:700;
+.total-info small{
+
+    display:block;
+
+    color:#ccc;
+
+    font-size:9px;
+
+    font-weight:bold;
+
+}
+
+
+.total-info strong{
+
+    display:block;
+
+    margin-top:4px;
+
+    color:#fff;
+
+    font-size:21px;
+
+}
+
+
+.btn-save{
+
+    height:42px;
+
+    padding:0 24px;
+
+    background:#ed7d22;
+
+    color:#fff;
+
+    border:0;
+
+    border-radius:4px;
+
+    font-size:11px;
+
+    font-weight:bold;
 
     cursor:pointer;
 
-    transition:.15s ease;
+}
+
+
+.btn-save:hover{
+
+    background:#d76b15;
 
 }
 
-.btn-primary{
 
-    background:#f28c28;
+.reset-area{
 
-    color:#ffffff;
+    margin-top:10px;
 
-}
-
-.btn-primary:hover{
-
-    background:#d87514;
+    text-align:right;
 
 }
 
-.btn-secondary{
 
-    background:#555a5f;
+.btn-reset{
 
-    color:#ffffff;
+    height:33px;
 
-}
+    padding:0 14px;
 
-.btn-secondary:hover{
+    background:#fff;
 
-    background:#414549;
+    color:#555;
 
-}
+    border:1px solid #cfcfcf;
 
-.btn-light{
+    border-radius:4px;
 
-    background:#ffffff;
+    font-size:10px;
 
-    color:#444;
-
-    border-color:#c9cdd1;
+    cursor:pointer;
 
 }
 
-.btn-light:hover{
 
-    background:#f1f2f3;
+.btn-reset:hover{
+
+    border-color:#ed7d22;
+
+    color:#bd5c0b;
 
 }
 
@@ -883,19 +1146,20 @@ input[type="checkbox"]{
 
 .page-footer{
 
+    padding:5px;
+
+    color:#999;
+
     text-align:center;
 
-    color:#888;
-
-    font-size:12px;
-
-    padding:15px 0 5px;
+    font-size:9px;
 
 }
 
 
 /* =========================================================
    MOBILE TOPBAR
+   TIDAK STICKY
    ========================================================= */
 
 .mobile-topbar{
@@ -906,7 +1170,7 @@ input[type="checkbox"]{
 
 
 /* =========================================================
-   MOBILE BOTTOM NAV
+   MOBILE BOTTOM
    ========================================================= */
 
 .mobile-bottom-nav{
@@ -920,28 +1184,30 @@ input[type="checkbox"]{
    TABLET
    ========================================================= */
 
-@media(max-width:1100px){
+@media(max-width:1000px){
 
-    .form-grid{
+    .selection-grid{
 
         grid-template-columns:
-            repeat(2,1fr);
+            1fr 1fr;
 
     }
 
-    .member-grid{
+
+    .selection-grid .field:last-child{
+
+        grid-column:1 / -1;
+
+    }
+
+
+    .section3-selection{
 
         grid-template-columns:
-            repeat(2,1fr);
+            1fr 1fr;
 
     }
 
-    .duty-summary{
-
-        grid-template-columns:
-            repeat(2,1fr);
-
-    }
 
     .klm-grid{
 
@@ -959,53 +1225,47 @@ input[type="checkbox"]{
 
 @media(max-width:700px){
 
-    html,
+
     body{
+
+        background:#f2f2f2;
+
+        padding-bottom:68px;
+
+    }
+
+
+    /* =====================================================
+       TOPBAR
+       TIDAK STICKY
+       ===================================================== */
+
+    .mobile-topbar{
+
+        position:relative;
 
         width:100%;
 
-        overflow-x:hidden;
+        height:57px;
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:space-between;
+
+        padding:0 13px;
+
+        background:#3e3e3e;
+
+        color:#fff;
+
+        border-bottom:3px solid #ed7d22;
 
     }
 
-    body{
 
-        background:#f1f3f5;
-
-        padding-bottom:78px;
-
-    }
-
-
-    /* -----------------------------------------------------
-       MOBILE TOP
-       ----------------------------------------------------- */
-
-.mobile-topbar{
-
-    position:relative;
-
-    width:100%;
-
-    height:57px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:space-between;
-
-    padding:0 13px;
-
-    background:#3d3d3d;
-
-    color:#fff;
-
-    border-bottom:3px solid #ed7d22;
-
-}
-
-    .mobile-topbar-title{
+    .mobile-title{
 
         display:flex;
 
@@ -1013,35 +1273,30 @@ input[type="checkbox"]{
 
         gap:2px;
 
-        min-width:0;
+    }
+
+
+    .mobile-title strong{
+
+        font-size:13px;
 
     }
 
-    .mobile-topbar-title strong{
 
-        font-size:15px;
+    .mobile-title span{
 
-        white-space:nowrap;
+        color:#cfcfcf;
 
-        overflow:hidden;
-
-        text-overflow:ellipsis;
+        font-size:8px;
 
     }
 
-    .mobile-topbar-title span{
-
-        color:#cfd2d5;
-
-        font-size:10px;
-
-    }
 
     .mobile-user{
 
-        width:34px;
+        width:32px;
 
-        height:34px;
+        height:32px;
 
         display:flex;
 
@@ -1049,41 +1304,33 @@ input[type="checkbox"]{
 
         justify-content:center;
 
-        background:#f28c28;
+        background:#ed7d22;
 
-        color:#ffffff;
+        color:#fff;
 
         border-radius:50%;
 
-        font-size:14px;
+        font-size:9px;
 
-        font-weight:700;
-
-        flex-shrink:0;
+        font-weight:bold;
 
     }
 
 
-    /* -----------------------------------------------------
+    /* =====================================================
        PAGE
-       ----------------------------------------------------- */
+       ===================================================== */
 
     .page-wrapper{
 
         width:100%;
 
-        max-width:none;
-
-        margin:0;
-
-        padding:12px 10px 20px;
+        padding:10px 8px 15px;
 
     }
 
 
-    /* -----------------------------------------------------
-       DESKTOP HEADER HIDE
-       ----------------------------------------------------- */
+    /* DESKTOP HEADER HIDDEN */
 
     .page-header{
 
@@ -1092,249 +1339,141 @@ input[type="checkbox"]{
     }
 
 
-    /* -----------------------------------------------------
-       USER
-       ----------------------------------------------------- */
+    /* =====================================================
+       MAIN CARD
+       ===================================================== */
 
-    .user-bar{
-
-        display:flex;
-
-        flex-direction:column;
-
-        align-items:flex-start;
-
-        gap:4px;
+    .card{
 
         margin-bottom:12px;
 
-        padding:11px 13px;
+        border-left-width:4px;
+
+        border-radius:6px;
+
+        box-shadow:
+            0 1px 6px rgba(0,0,0,.06);
 
     }
 
 
-    /* -----------------------------------------------------
-       SECTION
-       ----------------------------------------------------- */
+    /* =====================================================
+       SECTION HEADER
+       ===================================================== */
 
-    .form-section{
-
-        width:100%;
-
-        margin-bottom:12px;
-
-        border-radius:7px;
-
-    }
-
-    .section-header{
+    .section-title{
 
         min-height:50px;
 
-        padding:10px 12px;
+        padding:9px 11px;
 
         gap:9px;
 
     }
 
-    .section-number{
 
-        width:27px;
+    .section-no{
 
-        height:27px;
+        width:28px;
 
-        min-width:27px;
+        height:28px;
 
-        font-size:12px;
+        min-width:28px;
 
-    }
-
-    .section-title{
-
-        font-size:14px;
-
-        line-height:1.25;
-
-    }
-
-    .section-body{
-
-        padding:13px;
+        font-size:10px;
 
     }
 
 
-    /* -----------------------------------------------------
-       GRID
-       ----------------------------------------------------- */
+    .section-title-text strong{
 
-    .form-grid,
-    .form-grid-2,
-    .form-grid-3{
-
-        display:grid;
-
-        grid-template-columns:1fr;
-
-        gap:11px;
-
-    }
-
-    .form-group.full{
-
-        grid-column:auto;
+        font-size:11px;
 
     }
 
 
-    /* -----------------------------------------------------
-       LABEL
-       ----------------------------------------------------- */
+    .section-title-text small{
 
-    .form-label{
-
-        font-size:12px;
+        font-size:8px;
 
     }
 
 
-    /* -----------------------------------------------------
+    /* =====================================================
+       CONTENT
+       ===================================================== */
+
+    .section-content{
+
+        padding:12px;
+
+    }
+
+
+    /* =====================================================
        INPUT
-       ----------------------------------------------------- */
+       ===================================================== */
 
-    input[type="text"],
-    input[type="number"],
     input[type="date"],
+    input[type="number"],
     select{
 
-        height:42px;
+        height:39px;
 
-        font-size:14px;
+        font-size:12px;
 
     }
 
 
-    /* -----------------------------------------------------
+    /* =====================================================
        DATE
-       ----------------------------------------------------- */
+       ===================================================== */
 
-    .date-summary{
+    .date-layout{
 
-        display:grid;
+        display:flex;
 
-        grid-template-columns:
-            repeat(3,1fr);
+        flex-direction:column;
+
+        align-items:stretch;
+
+        gap:12px;
+
+    }
+
+
+    .date-field{
+
+        width:100%;
+
+    }
+
+
+    .auto-group{
+
+        display:flex;
 
         gap:7px;
 
-    }
+        overflow-x:auto;
 
-    .date-box{
-
-        padding:9px 7px;
-
-        text-align:center;
-
-    }
-
-    .date-box-label{
-
-        font-size:9px;
-
-        margin-bottom:4px;
-
-    }
-
-    .date-box-value{
-
-        font-size:12px;
+        padding-bottom:2px;
 
     }
 
 
-    /* -----------------------------------------------------
-       MEMBER
-       ----------------------------------------------------- */
+    .auto-group .auto-field{
 
-    .member-info{
-
-        margin-top:14px;
-
-        padding-top:14px;
-
-    }
-
-    .member-info-title{
-
-        font-size:13px;
-
-        margin-bottom:9px;
-
-    }
-
-    .member-grid{
-
-        display:grid;
-
-        grid-template-columns:
-            repeat(2,1fr);
-
-        gap:8px;
-
-    }
-
-    .info-box{
-
-        min-height:38px;
-
-        padding:7px 9px;
-
-        font-size:12px;
+        flex:0 0 auto;
 
     }
 
 
-    /* -----------------------------------------------------
-       DUTY
-       ----------------------------------------------------- */
+    /* =====================================================
+       SELECTION
+       ===================================================== */
 
-    .duty-summary{
-
-        display:grid;
-
-        grid-template-columns:
-            repeat(2,1fr);
-
-        gap:8px;
-
-        margin-top:12px;
-
-    }
-
-    .duty-box{
-
-        padding:10px;
-
-    }
-
-    .duty-box-label{
-
-        font-size:9px;
-
-    }
-
-    .duty-box-value{
-
-        font-size:13px;
-
-    }
-
-
-    /* -----------------------------------------------------
-       SPECIAL
-       ----------------------------------------------------- */
-
-    .special-duty{
+    .selection-grid{
 
         display:grid;
 
@@ -1344,129 +1483,64 @@ input[type="checkbox"]{
 
     }
 
-    .special-box{
 
-        padding:12px;
+    .selection-grid .field:last-child{
 
-    }
-
-    .special-box-title{
-
-        font-size:13px;
-
-        margin-bottom:10px;
+        grid-column:auto;
 
     }
 
 
-    /* -----------------------------------------------------
-       RADIO
-       ----------------------------------------------------- */
-
-    .radio-group{
-
-        gap:18px;
-
-        margin-bottom:10px;
-
-    }
-
-    .radio-item{
-
-        font-size:12px;
-
-    }
-
-
-    /* -----------------------------------------------------
-       KLM
-       ----------------------------------------------------- */
-
-    .klm-grid{
-
-        display:grid;
+    .section3-selection{
 
         grid-template-columns:1fr;
 
-        gap:8px;
-
     }
 
-    .klm-item{
+
+    /* =====================================================
+       MEMBER AUTO
+       ===================================================== */
+
+    .member-auto-grid{
+
+        display:grid;
 
         grid-template-columns:
-            25px 1fr;
+            1fr 1fr;
 
-        padding:10px;
-
-        gap:7px;
-
-    }
-
-    .klm-title{
-
-        font-size:12px;
+        gap:9px;
 
     }
 
 
-    /* -----------------------------------------------------
-       RM
-       ----------------------------------------------------- */
+    .member-auto-grid .auto-field{
 
-    .rm-display{
-
-        min-height:38px;
-
-        padding:0 9px;
+        width:auto !important;
 
     }
 
-    .rm-label{
+
+    .auto-field > span{
+
+        width:100%;
+
+        max-width:100%;
+
+        min-height:36px;
+
+        padding:0 8px;
 
         font-size:10px;
 
     }
 
-    .rm-value{
 
-        font-size:12px;
+    /* =====================================================
+       DUTY AUTO
+       ===================================================== */
 
-    }
-
-
-    /* -----------------------------------------------------
-       TOTAL
-       ----------------------------------------------------- */
-
-    .total-box{
-
-        padding:13px;
-
-        margin-top:12px;
-
-        border-left-width:4px;
-
-    }
-
-    .total-label{
-
-        font-size:12px;
-
-    }
-
-    .total-value{
-
-        font-size:17px;
-
-    }
-
-
-    /* -----------------------------------------------------
-       BUTTON
-       ----------------------------------------------------- */
-
-    .form-actions{
+    .compact-auto-grid{
 
         display:grid;
 
@@ -1475,40 +1549,191 @@ input[type="checkbox"]{
 
         gap:8px;
 
-        margin-top:14px;
-
-        padding-top:13px;
-
     }
 
-    .btn{
 
-        width:100%;
+    .compact-auto-grid .auto-field,
+    .compact-auto-grid .duty-time,
+    .compact-auto-grid .rm{
 
         min-width:0;
-
-        height:42px;
-
-        padding:0 10px;
-
-        font-size:12px;
-
-    }
-
-
-    /* -----------------------------------------------------
-       FOOTER
-       ----------------------------------------------------- */
-
-    .page-footer{
-
-        display:none;
 
     }
 
 
     /* =====================================================
-       MOBILE BOTTOM NAV
+       TAMPUNGAN
+       ===================================================== */
+
+    .tampungan-grid{
+
+        display:grid;
+
+        grid-template-columns:
+            1fr 100px;
+
+        gap:9px;
+
+    }
+
+
+    .tampungan-grid > .field:first-child{
+
+        width:auto;
+
+        grid-column:1 / -1;
+
+    }
+
+
+    .small-input{
+
+        width:auto;
+
+    }
+
+
+    .tampungan-grid .auto-field{
+
+        min-width:0;
+
+    }
+
+
+    /* =====================================================
+       SPECIAL
+       ===================================================== */
+
+    .special-grid{
+
+        display:grid;
+
+        grid-template-columns:1fr;
+
+        gap:10px;
+
+    }
+
+
+    .special-card{
+
+        padding:12px;
+
+    }
+
+
+    .special-header{
+
+        margin-bottom:11px;
+
+    }
+
+
+    .special-values{
+
+        display:grid;
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap:9px;
+
+    }
+
+
+    .special-values .field{
+
+        width:auto;
+
+    }
+
+
+    .special-values .auto-field{
+
+        min-width:0;
+
+    }
+
+
+    /* =====================================================
+       KLM
+       ===================================================== */
+
+    .klm-grid{
+
+        grid-template-columns:1fr;
+
+        gap:8px;
+
+    }
+
+
+    .klm-card{
+
+        min-height:77px;
+
+        padding:10px;
+
+    }
+
+
+    .klm-main{
+
+        grid-template-columns:
+            1fr 75px;
+
+    }
+
+
+    .klm-main input{
+
+        width:75px;
+
+    }
+
+
+    /* =====================================================
+       TOTAL
+       ===================================================== */
+
+    .total-area{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+        gap:12px;
+
+        padding:13px;
+
+    }
+
+
+    .total-info strong{
+
+        font-size:18px;
+
+    }
+
+
+    .btn-save{
+
+        width:100%;
+
+        height:41px;
+
+    }
+
+
+    .reset-area{
+
+        text-align:center;
+
+    }
+
+
+    /* =====================================================
+       BOTTOM NAV
        ===================================================== */
 
     .mobile-bottom-nav{
@@ -1523,24 +1748,19 @@ input[type="checkbox"]{
 
         z-index:2000;
 
+        height:65px;
+
         display:grid;
 
         grid-template-columns:
             repeat(4,1fr);
 
-        height:66px;
+        background:#3e3e3e;
 
-        background:#3d4145;
-
-        border-top:3px solid #f28c28;
-
-        box-shadow:
-            0 -3px 12px rgba(0,0,0,.18);
-
-        padding-bottom:
-            env(safe-area-inset-bottom);
+        border-top:3px solid #ed7d22;
 
     }
+
 
     .mobile-nav-item{
 
@@ -1554,49 +1774,41 @@ input[type="checkbox"]{
 
         gap:3px;
 
+        color:#cfcfcf;
+
         text-decoration:none;
 
-        color:#cdd0d3;
-
-        font-size:9px;
-
-        font-weight:600;
-
-        position:relative;
+        font-size:8px;
 
     }
 
-    .mobile-nav-icon{
 
-        font-size:19px;
+    .mobile-nav-item span{
 
-        line-height:1;
+        font-size:17px;
 
     }
+
+
+    .mobile-nav-item small{
+
+        font-size:8px;
+
+    }
+
 
     .mobile-nav-item.active{
 
-        color:#ffffff;
+        background:#4a4a4a;
 
-        background:#50555a;
+        color:#fff;
 
     }
 
-    .mobile-nav-item.active::before{
 
-        content:"";
+    .mobile-nav-item.active span{
 
-        position:absolute;
-
-        top:0;
-
-        left:25%;
-
-        right:25%;
-
-        height:3px;
-
-        background:#f28c28;
+        color:#ed7d22;
 
     }
 
@@ -1611,69 +1823,45 @@ input[type="checkbox"]{
 
     .page-wrapper{
 
-        padding-left:8px;
+        padding-left:6px;
 
-        padding-right:8px;
+        padding-right:6px;
 
     }
 
-    .section-body{
+
+    .section-content{
+
+        padding:10px;
+
+    }
+
+
+    .member-auto-grid{
+
+        gap:7px;
+
+    }
+
+
+    .auto-field > span{
+
+        font-size:9px;
+
+    }
+
+
+    .special-values{
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    .total-area{
 
         padding:11px;
-
-    }
-
-    .date-summary{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .date-box{
-
-        display:flex;
-
-        justify-content:space-between;
-
-        align-items:center;
-
-        text-align:left;
-
-    }
-
-    .date-box-label{
-
-        margin:0;
-
-    }
-
-    .date-box-value{
-
-        font-size:13px;
-
-    }
-
-    .member-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .duty-summary{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .form-actions{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .mobile-bottom-nav{
-
-        height:62px;
 
     }
 
@@ -1688,11 +1876,12 @@ input[type="checkbox"]{
 
     body{
 
-        background:#ffffff;
+        background:#fff;
 
         padding:0;
 
     }
+
 
     .page-wrapper{
 
@@ -1702,7 +1891,23 @@ input[type="checkbox"]{
 
     }
 
-    .form-section{
+
+    .mobile-topbar,
+    .mobile-bottom-nav{
+
+        display:none !important;
+
+    }
+
+
+    .page-header{
+
+        box-shadow:none;
+
+    }
+
+
+    .card{
 
         box-shadow:none;
 
@@ -1710,11 +1915,11 @@ input[type="checkbox"]{
 
     }
 
-    .form-actions,
-    .mobile-topbar,
-    .mobile-bottom-nav{
 
-        display:none !important;
+    .btn-save,
+    .btn-reset{
+
+        display:none;
 
     }
 
