@@ -1,4 +1,4 @@
-```javascript
+
 // ============================================================
 // DUTY-ANGGOTA.JS
 // LAPORAN ANGGARAN KERJA LEBIH MASA
