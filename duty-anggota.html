@@ -1,0 +1,1562 @@
+```html
+<!DOCTYPE html>
+<html lang="ms">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Pengisian Duty Anggota
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="duty-anggota.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     PAGE WRAPPER
+     ========================================================= -->
+
+<div class="page-wrapper">
+
+
+    <!-- =====================================================
+         TOP HEADER
+         ===================================================== -->
+
+    <header class="top-header">
+
+        <div class="brand-area">
+
+            <div class="brand-mark">
+                KLM
+            </div>
+
+            <div>
+
+                <h1>
+                    LAPORAN ANGGARAN KERJA LEBIH MASA
+                </h1>
+
+                <p>
+                    PENGISIAN DUTY ANGGOTA
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="user-area">
+
+            <span>
+                Ketua Pos
+            </span>
+
+            <strong id="namaPengguna">
+                -
+            </strong>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+         ===================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- =================================================
+             PAGE TITLE
+             ================================================= -->
+
+        <div class="page-title">
+
+            <div>
+
+                <span class="eyebrow">
+                    DUTY MANAGEMENT
+                </span>
+
+                <h2>
+                    Pengisian Duty Anggota
+                </h2>
+
+                <p>
+                    Masukkan maklumat tugasan anggota untuk
+                    pengiraan kerja lebih masa.
+                </p>
+
+            </div>
+
+
+            <div class="page-status">
+
+                <span class="status-dot"></span>
+
+                SISTEM AKTIF
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SECTION 1
+             MAKLUMAT TARIKH
+             ================================================= -->
+
+        <section class="form-section">
+
+            <div class="section-title">
+
+                <div class="section-number">
+                    01
+                </div>
+
+                <div>
+
+                    <h3>
+                        Maklumat Tarikh
+                    </h3>
+
+                    <p>
+                        Tentukan tarikh tugasan anggota.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="section-content">
+
+                <div class="date-layout">
+
+
+                    <div class="form-group">
+
+                        <label for="tarikh">
+                            Tarikh Bertugas
+                        </label>
+
+                        <input
+                            type="date"
+                            id="tarikh"
+                            name="tarikh"
+                        >
+
+                    </div>
+
+
+                    <div class="auto-info">
+
+                        <span>
+                            HARI
+                        </span>
+
+                        <strong id="hari">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="auto-info">
+
+                        <span>
+                            BULAN
+                        </span>
+
+                        <strong id="bulanNama">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="auto-info">
+
+                        <span>
+                            TAHUN
+                        </span>
+
+                        <strong id="tahun">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SECTION 2
+             MAKLUMAT POS & ANGGOTA
+             ================================================= -->
+
+        <section class="form-section">
+
+            <div class="section-title">
+
+                <div class="section-number">
+                    02
+                </div>
+
+                <div>
+
+                    <h3>
+                        Maklumat Pos & Anggota
+                    </h3>
+
+                    <p>
+                        Pilih unit, pos asal dan anggota bertugas.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="section-content">
+
+
+                <div class="three-column">
+
+
+                    <div class="form-group">
+
+                        <label for="unit">
+                            Unit
+                        </label>
+
+                        <select id="unit">
+
+                            <option value="">
+                                -- Pilih Unit --
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="posAsal">
+                            Pos Asal
+                        </label>
+
+                        <select
+                            id="posAsal"
+                            disabled
+                        >
+
+                            <option value="">
+                                -- Pilih Pos --
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="anggota">
+                            Nama Anggota
+                        </label>
+
+                        <select
+                            id="anggota"
+                            disabled
+                        >
+
+                            <option value="">
+                                -- Pilih Anggota --
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- MEMBER INFORMATION -->
+
+                <div class="member-card">
+
+
+                    <div class="card-heading">
+
+                        <span>
+                            MAKLUMAT ANGGOTA
+                        </span>
+
+                    </div>
+
+
+                    <div class="member-grid">
+
+
+                        <div class="readonly-field">
+
+                            <span>
+                                NO. SKB
+                            </span>
+
+                            <strong id="noSkb">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="readonly-field">
+
+                            <span>
+                                NO. ANGGOTA
+                            </span>
+
+                            <strong id="noAnggota">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="readonly-field">
+
+                            <span>
+                                KAWASAN
+                            </span>
+
+                            <strong id="kawasan">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="readonly-field">
+
+                            <span>
+                                WILAYAH
+                            </span>
+
+                            <strong id="wilayah">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="readonly-field">
+
+                            <span>
+                                UNIT
+                            </span>
+
+                            <strong id="unitInfo">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="readonly-field">
+
+                            <span>
+                                KETUA UNIT
+                            </span>
+
+                            <strong id="ketuaUnit">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="readonly-field">
+
+                            <span>
+                                KETUA POS
+                            </span>
+
+                            <strong id="ketuaPos">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="readonly-field">
+
+                            <span>
+                                POS ASAL
+                            </span>
+
+                            <strong id="posInfo">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SECTION 3
+             WAKTU & TEMPAT KERJA
+             ================================================= -->
+
+        <section class="form-section">
+
+            <div class="section-title">
+
+                <div class="section-number">
+                    03
+                </div>
+
+                <div>
+
+                    <h3>
+                        Waktu & Tempat Kerja
+                    </h3>
+
+                    <p>
+                        Tentukan kod duty dan lokasi tugasan.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="section-content">
+
+
+                <div class="two-column">
+
+
+                    <div class="form-group">
+
+                        <label for="kodDuty">
+                            Kod Duty
+                        </label>
+
+                        <select
+                            id="kodDuty"
+                            disabled
+                        >
+
+                            <option value="">
+                                -- Pilih Kod Duty --
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="readonly-field">
+
+                        <span>
+                            WAKTU TUGASAN
+                        </span>
+
+                        <strong id="waktuTugasan">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="three-column metric-row">
+
+
+                    <div class="metric-card">
+
+                        <span>
+                            JAM KERJA
+                        </span>
+
+                        <strong id="jamKerja">
+                            0.00
+                        </strong>
+
+                        <small>
+                            JAM
+                        </small>
+
+                    </div>
+
+
+                    <div class="metric-card">
+
+                        <span>
+                            KLM HARI BIASA
+                        </span>
+
+                        <strong id="jamKlmHariBiasa">
+                            0.00
+                        </strong>
+
+                        <small>
+                            JAM
+                        </small>
+
+                    </div>
+
+
+                    <div class="metric-card orange-metric">
+
+                        <span>
+                            RM KLM HARI BIASA
+                        </span>
+
+                        <strong id="rmKlmHariBiasa">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="two-column">
+
+
+                    <div class="form-group">
+
+                        <label for="kodTempatKerja">
+                            Kod Tempat Kerja
+                        </label>
+
+                        <select
+                            id="kodTempatKerja"
+                            disabled
+                        >
+
+                            <option value="">
+                                -- Pilih Kod Tempat Kerja --
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="readonly-field">
+
+                        <span>
+                            NAMA TEMPAT KERJA
+                        </span>
+
+                        <strong id="namaTempatKerja">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- TAMPUNGAN -->
+
+                <div class="sub-card">
+
+                    <div class="sub-card-title">
+                        POS TAMPUNGAN
+                    </div>
+
+
+                    <div class="three-column">
+
+
+                        <div class="form-group">
+
+                            <label for="posTampungan">
+                                Pos Tampungan
+                            </label>
+
+                            <select id="posTampungan">
+
+                                <option value="">
+                                    -- Tiada / Pilih Pos --
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="jamTampungan">
+                                Jam Tampungan
+                            </label>
+
+                            <input
+                                type="number"
+                                id="jamTampungan"
+                                min="0"
+                                step="0.01"
+                                value="0"
+                            >
+
+                        </div>
+
+
+                        <div class="metric-card orange-metric">
+
+                            <span>
+                                RM TAMPUNGAN
+                            </span>
+
+                            <strong id="rmTampungan">
+                                RM 0.00
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SECTION 4
+             HARI KHAS BERTUGAS
+             ================================================= -->
+
+        <section class="form-section">
+
+            <div class="section-title">
+
+                <div class="section-number">
+                    04
+                </div>
+
+                <div>
+
+                    <h3>
+                        Hari Khas Bertugas
+                    </h3>
+
+                    <p>
+                        Rekod tugasan pada hari khas.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="section-content special-grid">
+
+
+                <!-- OFFDAY -->
+
+                <div class="special-card">
+
+                    <div class="special-heading">
+
+                        <span>
+                            OFFDAY BERTUGAS
+                        </span>
+
+                    </div>
+
+
+                    <div class="choice-row">
+
+                        <label class="choice">
+
+                            <input
+                                type="radio"
+                                name="offday"
+                                value="0"
+                                checked
+                            >
+
+                            <span>
+                                TIDAK
+                            </span>
+
+                        </label>
+
+
+                        <label class="choice">
+
+                            <input
+                                type="radio"
+                                name="offday"
+                                value="1"
+                            >
+
+                            <span>
+                                YA
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="special-fields">
+
+
+                        <div class="form-group">
+
+                            <label for="jamOffday">
+                                Jam KLM Offday
+                            </label>
+
+                            <input
+                                type="number"
+                                id="jamOffday"
+                                min="0"
+                                step="0.01"
+                                value="0"
+                                disabled
+                            >
+
+                        </div>
+
+
+                        <div class="metric-card">
+
+                            <span>
+                                RM HARI OFFDAY
+                            </span>
+
+                            <strong id="rmHariOffday">
+                                RM 0.00
+                            </strong>
+
+                        </div>
+
+
+                        <div class="metric-card orange-metric">
+
+                            <span>
+                                RM KLM OFFDAY
+                            </span>
+
+                            <strong id="rmKlmOffday">
+                                RM 0.00
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CUTI AM -->
+
+                <div class="special-card">
+
+                    <div class="special-heading">
+
+                        <span>
+                            CUTI AM BERTUGAS
+                        </span>
+
+                    </div>
+
+
+                    <div class="choice-row">
+
+                        <label class="choice">
+
+                            <input
+                                type="radio"
+                                name="cutiam"
+                                value="0"
+                                checked
+                            >
+
+                            <span>
+                                TIDAK
+                            </span>
+
+                        </label>
+
+
+                        <label class="choice">
+
+                            <input
+                                type="radio"
+                                name="cutiam"
+                                value="1"
+                            >
+
+                            <span>
+                                YA
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="special-fields">
+
+
+                        <div class="metric-card">
+
+                            <span>
+                                RM HARI CUTI AM
+                            </span>
+
+                            <strong id="rmHariCutiam">
+                                RM 0.00
+                            </strong>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="jamCutiam">
+                                Jam KLM Cuti Am
+                            </label>
+
+                            <input
+                                type="number"
+                                id="jamCutiam"
+                                min="0"
+                                step="0.01"
+                                value="0"
+                                disabled
+                            >
+
+                        </div>
+
+
+                        <div class="metric-card orange-metric">
+
+                            <span>
+                                RM KLM CUTI AM
+                            </span>
+
+                            <strong id="rmKlmCutiam">
+                                RM 0.00
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SECTION 5
+             PECAHAN KLM
+             ================================================= -->
+
+        <section class="form-section">
+
+            <div class="section-title">
+
+                <div class="section-number">
+                    05
+                </div>
+
+                <div>
+
+                    <h3>
+                        Pecahan KLM
+                    </h3>
+
+                    <p>
+                        Tandakan kategori KLM dan masukkan jumlah jam.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="section-content">
+
+
+                <div class="klm-grid">
+
+
+                    <!-- WAJIB -->
+
+                    <div class="klm-card">
+
+                        <label class="klm-check">
+
+                            <input
+                                type="checkbox"
+                                id="klmWajib"
+                            >
+
+                            <span>
+                                KLM WAJIB
+                            </span>
+
+                        </label>
+
+                        <input
+                            type="number"
+                            id="jamKlmWajib"
+                            min="0"
+                            step="0.01"
+                            value="0"
+                            placeholder="Jam"
+                            disabled
+                        >
+
+                        <strong id="rmKlmWajib">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <!-- MC -->
+
+                    <div class="klm-card">
+
+                        <label class="klm-check">
+
+                            <input
+                                type="checkbox"
+                                id="klmMc"
+                            >
+
+                            <span>
+                                KLM MC
+                            </span>
+
+                        </label>
+
+                        <input
+                            type="number"
+                            id="jamKlmMc"
+                            min="0"
+                            step="0.01"
+                            value="0"
+                            placeholder="Jam"
+                            disabled
+                        >
+
+                        <strong id="rmKlmMc">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <!-- CUTI TAHUN -->
+
+                    <div class="klm-card">
+
+                        <label class="klm-check">
+
+                            <input
+                                type="checkbox"
+                                id="klmCutiTahun"
+                            >
+
+                            <span>
+                                KLM CUTI TAHUN
+                            </span>
+
+                        </label>
+
+                        <input
+                            type="number"
+                            id="jamKlmCutiTahun"
+                            min="0"
+                            step="0.01"
+                            value="0"
+                            placeholder="Jam"
+                            disabled
+                        >
+
+                        <strong id="rmKlmCutiTahun">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <!-- CUTI EHSAN -->
+
+                    <div class="klm-card">
+
+                        <label class="klm-check">
+
+                            <input
+                                type="checkbox"
+                                id="klmCutiEhsan"
+                            >
+
+                            <span>
+                                KLM CUTI EHSAN
+                            </span>
+
+                        </label>
+
+                        <input
+                            type="number"
+                            id="jamKlmCutiEhsan"
+                            min="0"
+                            step="0.01"
+                            value="0"
+                            placeholder="Jam"
+                            disabled
+                        >
+
+                        <strong id="rmKlmCutiEhsan">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <!-- ESKOT -->
+
+                    <div class="klm-card">
+
+                        <label class="klm-check">
+
+                            <input
+                                type="checkbox"
+                                id="klmEskot"
+                            >
+
+                            <span>
+                                KLM ESKOT
+                            </span>
+
+                        </label>
+
+                        <input
+                            type="number"
+                            id="jamKlmEskot"
+                            min="0"
+                            step="0.01"
+                            value="0"
+                            placeholder="Jam"
+                            disabled
+                        >
+
+                        <strong id="rmKlmEskot">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <!-- CIT -->
+
+                    <div class="klm-card">
+
+                        <label class="klm-check">
+
+                            <input
+                                type="checkbox"
+                                id="klmCit"
+                            >
+
+                            <span>
+                                KLM CIT
+                            </span>
+
+                        </label>
+
+                        <input
+                            type="number"
+                            id="jamKlmCit"
+                            min="0"
+                            step="0.01"
+                            value="0"
+                            placeholder="Jam"
+                            disabled
+                        >
+
+                        <strong id="rmKlmCit">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <!-- KURSUS -->
+
+                    <div class="klm-card">
+
+                        <label class="klm-check">
+
+                            <input
+                                type="checkbox"
+                                id="klmKursus"
+                            >
+
+                            <span>
+                                KLM KURSUS
+                            </span>
+
+                        </label>
+
+                        <input
+                            type="number"
+                            id="jamKlmKursus"
+                            min="0"
+                            step="0.01"
+                            value="0"
+                            placeholder="Jam"
+                            disabled
+                        >
+
+                        <strong id="rmKlmKursus">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <!-- CUTI GANTI -->
+
+                    <div class="klm-card">
+
+                        <label class="klm-check">
+
+                            <input
+                                type="checkbox"
+                                id="klmCutiGanti"
+                            >
+
+                            <span>
+                                KLM CUTI GANTI
+                            </span>
+
+                        </label>
+
+                        <input
+                            type="number"
+                            id="jamKlmCutiGanti"
+                            min="0"
+                            step="0.01"
+                            value="0"
+                            placeholder="Jam"
+                            disabled
+                        >
+
+                        <strong id="rmKlmCutiGanti">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <!-- LAIN -->
+
+                    <div class="klm-card">
+
+                        <label class="klm-check">
+
+                            <input
+                                type="checkbox"
+                                id="klmLain"
+                            >
+
+                            <span>
+                                KLM LAIN
+                            </span>
+
+                        </label>
+
+                        <input
+                            type="number"
+                            id="jamKlmLain"
+                            min="0"
+                            step="0.01"
+                            value="0"
+                            placeholder="Jam"
+                            disabled
+                        >
+
+                        <strong id="rmKlmLain">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SECTION 6
+             RINGKASAN
+             ================================================= -->
+
+        <section class="form-section summary-section">
+
+            <div class="section-title">
+
+                <div class="section-number">
+                    06
+                </div>
+
+                <div>
+
+                    <h3>
+                        Ringkasan KLM
+                    </h3>
+
+                    <p>
+                        Semakan sebelum rekod disimpan.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="section-content">
+
+
+                <div class="summary-box">
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            RM KLM Hari Biasa
+                        </span>
+
+                        <strong id="summaryHariBiasa">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            RM Tampungan
+                        </span>
+
+                        <strong id="summaryTampungan">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            RM Hari Offday
+                        </span>
+
+                        <strong id="summaryHariOffday">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            RM KLM Offday
+                        </span>
+
+                        <strong id="summaryKlmOffday">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            RM Hari Cuti Am
+                        </span>
+
+                        <strong id="summaryHariCutiam">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            RM KLM Cuti Am
+                        </span>
+
+                        <strong id="summaryKlmCutiam">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            RM KLM Wajib
+                        </span>
+
+                        <strong id="summaryWajib">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            RM KLM MC
+                        </span>
+
+                        <strong id="summaryMc">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            RM KLM Cuti Tahun
+                        </span>
+
+                        <strong id="summaryCutiTahun">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            RM KLM Cuti Ehsan
+                        </span>
+
+                        <strong id="summaryCutiEhsan">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            RM KLM Eskot
+                        </span>
+
+                        <strong id="summaryEskot">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            RM KLM CIT
+                        </span>
+
+                        <strong id="summaryCit">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            RM KLM Kursus
+                        </span>
+
+                        <strong id="summaryKursus">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            RM KLM Cuti Ganti
+                        </span>
+
+                        <strong id="summaryCutiGanti">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            RM KLM Lain
+                        </span>
+
+                        <strong id="summaryLain">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-total">
+
+                        <span>
+                            JUMLAH KESELURUHAN
+                        </span>
+
+                        <strong id="jumlahKeseluruhan">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- ACTIONS -->
+
+                <div class="form-actions">
+
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        id="btnReset"
+                    >
+                        RESET
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="btnSimpan"
+                    >
+                        SIMPAN DUTY
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="page-footer">
+
+        <span>
+            LAPORAN ANGGARAN KERJA LEBIH MASA
+        </span>
+
+        <span>
+            © 2026
+        </span>
+
+    </footer>
+
+
+</div>
+
+
+</body>
+
+</html>
+```
