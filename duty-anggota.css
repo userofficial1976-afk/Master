@@ -981,34 +981,29 @@ input[type="checkbox"]{
        MOBILE TOP
        ----------------------------------------------------- */
 
-    .mobile-topbar{
+.mobile-topbar{
 
-        position:sticky;
+    position:relative;
 
-        top:0;
+    width:100%;
 
-        z-index:1000;
+    height:57px;
 
-        display:flex;
+    display:flex;
 
-        align-items:center;
+    align-items:center;
 
-        justify-content:space-between;
+    justify-content:space-between;
 
-        height:58px;
+    padding:0 13px;
 
-        padding:0 15px;
+    background:#3d3d3d;
 
-        background:#3d4145;
+    color:#fff;
 
-        color:#ffffff;
+    border-bottom:3px solid #ed7d22;
 
-        border-bottom:3px solid #f28c28;
-
-        box-shadow:
-            0 2px 8px rgba(0,0,0,.15);
-
-    }
+}
 
     .mobile-topbar-title{
 
